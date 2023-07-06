@@ -7,11 +7,38 @@
     <%= csp_meta_tag %>
 
     <script src="https://kit.fontawesome.com/a30ba0c1da.js" crossorigin="anonymous"></script>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <div class="container header-group">
+        <%= link_to root_path do %>
+          <%= image_tag 'logo.png', class: "logo" %>
+        <% end %>
+        <div class="menu-box">
+          <span class="list-bar"></span>
+          <span class="list-bar"></span>
+          <span class="list-bar"></span>
+        </div>
+        <nav class="navbar navbar-expand">
+          <ul class="navbar-nav">
+            <li class="nav-list">
+              <%= link_to "Portfolio", root_path(anchor: 'portfolio') %>
+            </li>
+            <li class="nav-list"></li>
+            <li class="nav-list"></li>
+            <li class="nav-list"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+      
+    </footer>
   </body>
 </html>
