@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="container header-group">
-        <%= link_to root_path do %>
+        <%= link_to root_path(anchor: 'mv') do %>
           <%= image_tag 'logo.png', class: "logo" %>
         <% end %>
         <div class="menu-box">
@@ -22,14 +22,20 @@
           <span class="list-bar"></span>
           <span class="list-bar"></span>
         </div>
-        <nav class="navbar navbar-expand">
-          <ul class="navbar-nav">
+        <nav>
+          <ul class="nav">
             <li class="nav-list">
-              <%= link_to "Portfolio", root_path(anchor: 'portfolio') %>
+              <%= link_to "Portfolio", root_path(anchor: 'portfolio'), style: "color: white;" %>
             </li>
-            <li class="nav-list"></li>
-            <li class="nav-list"></li>
-            <li class="nav-list"></li>
+            <li class="nav-list">
+              <%= link_to "Feature", root_path(anchor: 'feature'), style: "color: white;" %>
+            </li>
+            <li class="nav-list">
+              <%= link_to "Profile", root_path(anchor: 'profile'), style: "color: white;" %>
+            </li>
+            <li class="nav-list">
+              <%= link_to "Contact", root_path(anchor: 'contact'), style: "color: white;" %>
+            </li>
           </ul>
         </nav>
       </div>
