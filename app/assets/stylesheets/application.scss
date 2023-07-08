@@ -276,7 +276,113 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+  .menu-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #FAFAFA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+  
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+  
+  .list-bar {
+    display: block;
+    width: 25%;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #FAFAFA;
+  }
+  
+  .nav-list {
+    display: none;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: rgba(0,0,0,.9);
+  }
+  
+	.sp-none {
+	  display: none;
+	}
+  
+  #mv {
+    background-image: image-url("code.png");
+  }
+  
 	.container {
 	  width: 90%;
 	}
+	
+	.mv-title {
+	  font-size: 40px;
+	}
+	
+	.mv-text {
+	  font-size: 18px;
+	}
+	
+	.production-group {
+	  width: 300px;
+	}
+	
+	.production {
+	  margin-right: 0;
+	}
+	
+	#feature {
+	  background-size :cover;
+	  background-position: center;
+	}
+	
+	.strength-group {
+	  flex-flow: row wrap;
+	  width: 320px;
+	}
+	
+	.strength:first-child {
+	  margin-top: 0;
+	}
+	
+	.strength {
+	  margin-right: 0;
+	}
+	
+	.profile-group {
+	  flex-flow: row wrap;
+	  text-align: center;
+	}
+	
+	.profile-group .left-content {
+	  margin-bottom: 20px;
+	}
+	
+	.left-content {
+	  width: 100%;
+	}
+	
+	.right-content {
+	  width: 100%;
+	}
+	
+	.contact-group {
+	  flex-flow: row wrap;
+	  width: 100%;
+	  text-align: center;
+	}
+	
+	.left-content-content {
+	  width: 100%;
+	}
+	
+	.right-content-content {
+	  width: 100%;
+	  margin-top: 20px;
+	}
+	
 }
